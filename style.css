@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;1,100&family=Raleway:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,300;1,400&family=Tajawal:wght@400;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: rgb(122, 158, 206);
+  --gray: rgba(175, 171, 171, 0.96);
+}
+body {
+  background-color: #202124;
+  color: var(--gray);
+  font-family: "Raleway", sans-serif;
+}
+.search {
+  display: grid;
+  grid-template-columns: 1.5fr 11fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo form settings";
+  justify-content: space-between;
+  padding: 2rem 2rem 0.2rem 2rem;
+}
+header div img {
+  height: 3rem;
+  width: 4.6rem;
+  grid-area: logo;
+}
+.search form {
+  width: 100%;
+  max-width: 40rem;
+  height: 2.8rem;
+  grid-area: form;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 8fr 1fr 2fr;
+  grid-template-areas: " input icon tools";
+  background-color: #323234;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+.search input {
+  border-color: transparent;
+  background-color: transparent;
+  outline: none;
+  grid-area: input;
+  padding-left: 1rem;
+  height: 2.8rem;
+}
+.closeIcon {
+  padding-left: 1.5rem;
+  font-size: 1.4rem;
+  align-self: center;
+}
+.icons {
+  display: grid;
+  grid-template-columns: 8fr 1fr 2fr;
+  font-size: 1.1rem;
+  height: 1.5rem;
+  padding: 0 0.6rem;
+  align-items: center;
+  border-left: 1px solid var(--gray);
+}
+.icons i {
+  padding: 0 0.6rem;
+}
+.settings {
+  grid-area: settings;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "icon1 icon2 image";
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.settings img {
+  height: 2rem;
+  width: 2rem;
+  grid-area: image;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.search input::placeholder {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.buttons {
+  margin-top: 1.4rem;
+}
+/* start navbar */
+nav {
+  display: grid;
+  grid-template-columns: 33rem 15rem;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  border-bottom: 0.1px solid rgba(109, 106, 106, 0.841);
+}
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+nav ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 1rem;
+  padding: 1rem 0;
+}
+nav p {
+  padding-left: 0.4rem;
+}
+.all {
+  color: var(--blue);
+  border-bottom: 4px solid var(--blue);
+}
+.all p {
+  padding-left: 0em;
+}
+/* end header */
