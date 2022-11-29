@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;1,100&family=Raleway:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,300;1,400&family=Tajawal:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;1,100&family=Raleway:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,300;1,400&family=Roboto:ital,wght@0,400;1,300;1,400;1,500&family=Tajawal:wght@400;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,12 +6,12 @@
 }
 :root {
   --blue: rgb(122, 158, 206);
-  --gray: rgba(175, 171, 171, 0.96);
+  --gray: rgba(197, 195, 195, 0.96);
 }
 body {
   background-color: #202124;
   color: var(--gray);
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .search {
   display: grid;
@@ -100,7 +100,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   font-size: 0.8rem;
-  border-bottom: 0.1px solid rgba(109, 106, 106, 0.841);
+  border-bottom: 0.1px solid #353536f1;
 }
 nav ul {
   list-style: none;
@@ -124,3 +124,81 @@ nav p {
   padding-left: 0em;
 }
 /* end header */
+/* start styling main */
+main {
+  padding: 1rem 13rem;
+}
+main a:hover {
+  text-decoration: underline;
+}
+.links {
+  padding-top: 1.3rem;
+}
+.links a {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.links p {
+  padding: 0.5rem 0;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.innerLinks {
+  padding: 1rem;
+}
+.innerLinks div {
+  padding: 0.3rem 0;
+}
+.options {
+  width: 45rem;
+  font-size: 1.1rem;
+}
+.options ul {
+  list-style: none;
+}
+.options ul li {
+  display: grid;
+  grid-template-columns: 25rem 2rem;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1.2px solid #353536f1;
+}
+.options p i,
+h2 i {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+.options ul li:first-child {
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+.Related {
+  padding: 2rem 0;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: aliceblue;
+  padding: 1rem 0;
+}
+.containar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.6rem 1rem;
+}
+.containar div {
+  padding: 1rem;
+  background-color: #323234;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+.containar a {
+  color: var(--gray);
+  text-decoration: none;
+}
+/* end main  */
