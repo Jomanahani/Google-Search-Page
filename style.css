@@ -334,3 +334,38 @@ aside ul li p {
   text-align: center;
 }
 /* end main  */
+/* start footer section */
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+footer div{
+  display: grid;
+  justify-content: space-between;
+  background-color: rgb(21, 20, 20);
+  color: var(--gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  padding: 1rem 13rem;
+}
+.row2{
+  border-top: 1px solid #353536f1; 
+}
+footer ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 3rem 7rem 4rem 3rem;
+}
+footer ul li{
+  padding: 0 0.34rem;
+  letter-spacing: 0rem;
+}
+footer ul li a{
+  color: rgb(193, 191, 191);
+  text-decoration: none;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+}
+/* end footer */
