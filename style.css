@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --blue: rgb(122, 158, 206);
+  --blue: rgb(147, 183, 227);
   --gray: rgba(197, 195, 195, 0.96);
 }
 body {
@@ -126,8 +126,16 @@ nav p {
 /* end header */
 /* start styling main */
 main {
-  padding: 1rem 13rem;
+  padding: 1rem 8rem;
+  padding-left: 13rem;
+  display: grid;
+  grid-template-columns: 42rem 23rem;
+  grid-template-areas: "main aside";
+  justify-content: space-between;
 }
+/* main section {
+    padding-left: 13rem;
+} */
 main a:hover {
   text-decoration: underline;
 }
@@ -200,5 +208,129 @@ h2 {
 .containar a {
   color: var(--gray);
   text-decoration: none;
+}
+/* start aside */
+aside {
+  grid-area: aside;
+  border: 1px solid #353536f1;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+aside a {
+  color: var(--blue);
+}
+aside div img {
+  height: 6rem;
+  width: 6rem;
+}
+aside p {
+  padding: 1rem;
+}
+a:visited {
+  color: #bb8af9;
+}
+aside a:visited {
+  text-decoration: none;
+}
+.react {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+}
+.title {
+  padding: 1rem;
+  border-bottom: 1px solid #353536f1;
+}
+.title h1 {
+  color: aliceblue;
+}
+.title p {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+aside ul {
+  list-style: none;
+  padding: 0 1rem;
+}
+aside ul li {
+  display: grid;
+  grid-template-columns: 8.7rem 10rem;
+  grid-template-areas: "text link";
+  font-size: 1rem;
+}
+aside ul li:first-child {
+  display: block;
+}
+aside ul li a {
+  grid-area: link;
+  align-self: center;
+}
+aside ul li p {
+  align-self: center;
+  padding: 0.3rem;
+}
+.component ul {
+  padding: 0;
+}
+.component li:first-child {
+  display: grid;
+}
+.component li {
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+  border-top: 1px solid #353536f1;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+}
+.component i {
+  padding-left: 2rem;
+  align-self: center;
+}
+.react img {
+  height: 11rem;
+  width: 11rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.extra {
+  border-top: 1px solid #353536f1;
+  padding: 1rem;
+}
+.extra div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.extra h3 {
+  padding: 1rem 0;
+  color: aliceblue;
+}
+.extra img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.card {
+  display: grid;
+  grid-template-rows: 5rem 1rem;
+  grid-template-areas: "img" "text";
+}
+.card p {
+  grid-area: text;
+  padding: 0;
+  text-align: center;
 }
 /* end main  */
