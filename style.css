@@ -213,6 +213,7 @@ h2 {
 aside {
   grid-area: aside;
   border: 1px solid #353536f1;
+  height: 62rem;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
